@@ -1,9 +1,7 @@
 import time
 # Recursive implementation of Fibonacci sequence
 def fibonacci_recursive(n):
-   if n <= 1:
-        return n
-   return fibonacci_recursive(n-1) + fibonacci_recursive(n-2)
+   return n if n <= 1 else fibonacci_recursive(n-1) + fibonacci_recursive(n-2)
 
 # Dynamic programming implementation of Fibonacci sequence with recursion
 def fibonacci_dynamic(n, m={}):
